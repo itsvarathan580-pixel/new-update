@@ -1,0 +1,181 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Eco-Digital Light Mode */
+    --background: 150 30% 98%;
+    /* Very pale mint */
+    --foreground: 160 50% 10%;
+    /* Deep forest green text */
+
+    --card: 0 0% 100%;
+    --card-foreground: 160 50% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 160 50% 10%;
+
+    --primary: 150 90% 35%;
+    /* Vibrant Emerald */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 150 20% 94%;
+    /* Pale green-gray */
+    --secondary-foreground: 160 40% 20%;
+
+    --muted: 150 15% 94%;
+    --muted-foreground: 160 10% 45%;
+
+    --accent: 85 80% 45%;
+    /* Lime Green */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 150 15% 90%;
+    --input: 150 15% 90%;
+    --ring: 150 90% 35%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 150 30% 97%;
+    --sidebar-foreground: 160 50% 10%;
+    --sidebar-primary: 150 90% 35%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 150 20% 94%;
+    --sidebar-accent-foreground: 160 40% 20%;
+    --sidebar-border: 150 15% 90%;
+    --sidebar-ring: 150 90% 35%;
+
+    /* Custom tokens */
+    --gold: 85 80% 45%;
+    /* Re-purposing gold to Lime for this theme */
+    --gold-foreground: 0 0% 100%;
+    --glass-bg: 150 30% 98% / 0.7;
+    --glass-border: 150 15% 90% / 0.5;
+    --glow-primary: 150 90% 35% / 0.2;
+    --glow-gold: 85 80% 45% / 0.15;
+  }
+
+  .dark {
+    /* Eco-Digital Dark Mode */
+    --background: 160 50% 4%;
+    /* Deepest Jungle Green */
+    --foreground: 150 20% 95%;
+
+    --card: 160 40% 8%;
+    --card-foreground: 150 20% 95%;
+
+    --popover: 160 40% 8%;
+    --popover-foreground: 150 20% 95%;
+
+    --primary: 150 70% 50%;
+    /* Brighter Emerald for Dark Mode */
+    --primary-foreground: 160 50% 4%;
+
+    --secondary: 160 30% 15%;
+    --secondary-foreground: 150 20% 90%;
+
+    --muted: 160 30% 12%;
+    --muted-foreground: 150 15% 60%;
+
+    --accent: 85 70% 50%;
+    /* Brighter Lime */
+    --accent-foreground: 160 50% 4%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 160 30% 15%;
+    --input: 160 30% 15%;
+    --ring: 150 70% 50%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 160 50% 5%;
+    --sidebar-foreground: 150 20% 95%;
+    --sidebar-primary: 150 70% 50%;
+    --sidebar-primary-foreground: 160 50% 4%;
+    --sidebar-accent: 160 30% 15%;
+    --sidebar-accent-foreground: 150 20% 90%;
+    --sidebar-border: 160 30% 15%;
+    --sidebar-ring: 150 70% 50%;
+
+    /* Custom tokens */
+    --gold: 85 70% 50%;
+    --gold-foreground: 160 50% 4%;
+    --glass-bg: 160 40% 8% / 0.6;
+    --glass-border: 160 30% 15% / 0.5;
+    --glow-primary: 150 70% 50% / 0.3;
+    --glow-gold: 85 70% 50% / 0.2;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-card/60 backdrop-blur-xl border border-white/10 rounded-xl;
+  }
+
+  .glass-card-hover {
+    @apply glass-card transition-all duration-300 hover:border-primary/30 hover:shadow-[0_0_30px_hsl(var(--glow-primary))];
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent;
+  }
+
+  .gradient-text-gold {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-accent via-yellow-300 to-accent;
+  }
+
+  .glow-button {
+    @apply relative overflow-hidden bg-primary text-primary-foreground font-semibold shadow-[0_0_20px_hsl(var(--glow-primary))] hover:shadow-[0_0_40px_hsl(var(--glow-primary))] transition-all duration-300;
+  }
+
+  .section-padding {
+    @apply py-20 md:py-28 px-4;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--border));
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--primary));
+}
