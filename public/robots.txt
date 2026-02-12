@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://lionyx.tech/sitemap.xml
+Sitemap: https://itsvarathan.in/sitemap.xml

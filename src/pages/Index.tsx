@@ -38,16 +38,16 @@ const Index = () => {
         <title>Create Website for Business | #1 Web Design Agency</title>
         <meta name="description" content="Want to build a website? We are the best web development company for business websites, ecommerce, and custom designs. Low cost, premium quality." />
         <meta name="keywords" content="website create, build website, create website for business, web design company, website builder, seo services, lionyx technologies, low cost website design, best web development company, ecommerce website builder, business website maker, professional website designers, create own website, custom web design agency, chennai web design, tamil nadu website developers" />
-        <link rel="canonical" href="https://lionyx.tech/" />
+        <link rel="canonical" href="https://itsvarathan.in/" />
         <script type="application/ld+json">
           {`
             {
               "@context": "https://schema.org",
               "@type": "ProfessionalService",
-              "name": "Lionyx Technologies",
-              "image": "https://lionyx.tech/hero-bg.jpg",
-              "@id": "https://lionyx.tech",
-              "url": "https://lionyx.tech",
+              "name": "Itsvarathan",
+              "image": "https://itsvarathan.in/hero-bg.jpg",
+              "@id": "https://itsvarathan.in",
+              "url": "https://itsvarathan.in",
               "telephone": "+919790727825",
               "address": {
                 "@type": "PostalAddress",
