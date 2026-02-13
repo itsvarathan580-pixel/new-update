@@ -1,6 +1,13 @@
+import SEO from "@/components/SEO";
+
 const Privacy = () => {
   return (
     <main className="pt-20">
+      <SEO
+        title="Privacy Policy | LIONYX TECHNOLOGIES"
+        description="Privacy Policy for LIONYX TECHNOLOGIES. How we collect, use, and protect your data."
+        keywords="privacy policy, data protection, gdpr compliance, website privacy"
+      />
       <section className="section-padding">
         <div className="container-custom max-w-4xl mx-auto">
           <h1 className="text-4xl font-heading font-bold mb-8">Privacy Policy</h1>

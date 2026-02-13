@@ -17,17 +17,18 @@ const fadeInUp = {
   transition: { duration: 0.5 },
 };
 
-import { Helmet } from "react-helmet-async";
+import SEO from "@/components/SEO";
 
 const Portfolio = () => {
   const { projects } = useProjects();
 
   return (
     <main className="pt-20">
-      <Helmet>
-        <title>Our Work | Lionyx Technologies Portfolio</title>
-        <meta name="description" content="Explore our portfolio of stunning websites and web applications. See how we've helped businesses across various industries succeed online." />
-      </Helmet>
+      <SEO
+        title="Our Work | Portfolio"
+        description="Explore our portfolio of stunning websites and web applications. See how we've helped businesses across various industries succeed online."
+        keywords="web design portfolio, website examples, web development projects, best website designs, ecommerce portfolio, business website examples, lionyx technologies work"
+      />
       <section className="section-padding text-center">
         <div className="container-custom">
           <motion.p {...fadeInUp} className="text-sm font-semibold text-primary tracking-widest uppercase mb-4">

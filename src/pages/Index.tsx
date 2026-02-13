@@ -26,6 +26,7 @@ const faqs = [
 import { useProjects } from "@/context/ProjectContext";
 
 import { Helmet } from "react-helmet-async";
+import SEO from "@/components/SEO";
 import { trackConversion } from "@/components/GoogleAds";
 
 const Index = () => {
@@ -34,18 +35,19 @@ const Index = () => {
 
   return (
     <main className="pt-16 md:pt-20">
+      <SEO
+        title="#1 Web Developer & Website Builder"
+        description="Looking for the best web developer? We build stunning, high-ranking websites. Top #1 website creator for business, ecommerce, and custom web design."
+        keywords="web developer, build website, create website, website maker, best web design company, website creator, hire web developer, top rated web agency, chennai web design, online business website, ecommerce website builder, make my website"
+      />
       <Helmet>
-        <title>Create Website for Business | #1 Web Design Agency</title>
-        <meta name="description" content="Want to build a website? We are the best web development company for business websites, ecommerce, and custom designs. Low cost, premium quality." />
-        <meta name="keywords" content="website create, build website, create website for business, web design company, website builder, seo services, lionyx technologies, low cost website design, best web development company, ecommerce website builder, business website maker, professional website designers, create own website, custom web design agency, chennai web design, tamil nadu website developers" />
-        <link rel="canonical" href="https://itsvarathan.in/" />
         <script type="application/ld+json">
           {`
             {
               "@context": "https://schema.org",
               "@type": "ProfessionalService",
-              "name": "Itsvarathan",
-              "image": "https://itsvarathan.in/hero-bg.jpg",
+              "name": "LIONYX TECHNOLOGIES",
+              "image": "https://itsvarathan.in/winfly-taxi.png",
               "@id": "https://itsvarathan.in",
               "url": "https://itsvarathan.in",
               "telephone": "+919790727825",
@@ -56,6 +58,11 @@ const Index = () => {
                 "addressRegion": "TN",
                 "postalCode": "600001",
                 "addressCountry": "IN"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 13.0827,
+                "longitude": 80.2707
               },
               "priceRange": "₹8999 - ₹24999",
               "openingHoursSpecification": {
@@ -70,7 +77,11 @@ const Index = () => {
                 ],
                 "opens": "09:00",
                 "closes": "20:00"
-              }
+              },
+              "sameAs": [
+                "https://www.instagram.com/lionyx_tech",
+                "https://www.linkedin.com/company/lionyx-technologies"
+              ]
             }
           `}
         </script>

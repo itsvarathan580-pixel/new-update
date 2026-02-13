@@ -3,6 +3,7 @@ import { Phone, Mail, MapPin, Clock, Send, CheckCircle, Loader2 } from "lucide-r
 import { motion } from "framer-motion";
 import { toast } from "sonner";
 import { z } from "zod";
+import SEO from "@/components/SEO";
 
 const contactSchema = z.object({
   name: z.string().trim().min(1, "Name is required").max(100),
@@ -85,6 +86,11 @@ const Contact = () => {
 
   return (
     <main className="pt-20">
+      <SEO
+        title="Contact Us | Start Your Project"
+        description="Get in touch with LIONYX TECHNOLOGIES. Call or email us for a free consultation. Professional web design and development services in Chennai."
+        keywords="contact web designer, hire web developer, web design enquiry, business website quote, chennai web design contact, lionyx technologies phone number"
+      />
       <section className="section-padding text-center">
         <div className="container-custom">
           <motion.p {...fadeInUp} className="text-sm font-semibold text-primary tracking-widest uppercase mb-4">

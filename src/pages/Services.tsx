@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import SEO from "@/components/SEO";
 import {
   Globe, ShoppingCart, Briefcase, UtensilsCrossed, Scissors, GraduationCap,
   Building2, Layout, Building, Rocket, User, BookOpen, Newspaper, CalendarCheck,
@@ -41,6 +42,11 @@ const fadeInUp = {
 const Services = () => {
   return (
     <main className="pt-20">
+      <SEO
+        title="Our Services | Web Design & Development"
+        description="Comprehensive web solutions: Business websites, E-commerce, Portfolio, SEO, and more. Custom web design tailored to your industry."
+        keywords="web design services, ecommerce website development, portfolio website builder, seo services, corporate website design, startup website maker"
+      />
       {/* Hero */}
       <section className="section-padding text-center">
         <div className="container-custom">

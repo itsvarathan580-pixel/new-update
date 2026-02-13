@@ -1,6 +1,13 @@
+import SEO from "@/components/SEO";
+
 const Terms = () => {
   return (
     <main className="pt-20">
+      <SEO
+        title="Terms & Conditions | LIONYX TECHNOLOGIES"
+        description="Terms and Conditions for LIONYX TECHNOLOGIES web design services. Service agreement, payment terms, and policies."
+        keywords="terms and conditions, service agreement, web design contract, refund policy"
+      />
       <section className="section-padding">
         <div className="container-custom max-w-4xl mx-auto">
           <h1 className="text-4xl font-heading font-bold mb-8">Terms & Conditions</h1>

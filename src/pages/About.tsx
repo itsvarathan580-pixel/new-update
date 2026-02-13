@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Target, Eye, Users, Shield } from "lucide-react";
+import SEO from "@/components/SEO";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 30 },
@@ -11,6 +12,11 @@ const fadeInUp = {
 const About = () => {
   return (
     <main className="pt-20">
+      <SEO
+        title="About Us | LIONYX TECHNOLOGIES"
+        description="Learn about LIONYX TECHNOLOGIES, our mission, vision, and the team behind the best web design agency in Chennai."
+        keywords="about lionyx technologies, web design company profile, web development team, mission and vision, itsvarathan founder"
+      />
       <section className="section-padding text-center">
         <div className="container-custom">
           <motion.p {...fadeInUp} className="text-sm font-semibold text-primary tracking-widest uppercase mb-4">

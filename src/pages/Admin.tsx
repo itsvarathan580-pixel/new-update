@@ -6,6 +6,7 @@ import {
     Layout, Shield, LogOut, CheckCircle, X
 } from "lucide-react";
 import { toast } from "sonner";
+import SEO from "@/components/SEO";
 
 const Admin = () => {
     const { projects, addProject, updateProject, deleteProject } = useProjects();
@@ -113,6 +114,7 @@ const Admin = () => {
 
     return (
         <main className="pt-24 pb-20">
+            <SEO title="Admin Dashboard" noindex />
             <div className="container-custom">
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-10 gap-4">
                     <div>

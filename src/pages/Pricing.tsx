@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import SEO from "@/components/SEO";
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
 
@@ -64,15 +65,15 @@ const fadeInUp = {
   transition: { duration: 0.5 },
 };
 
-import { Helmet } from "react-helmet-async";
 
 const Pricing = () => {
   return (
     <main className="pt-20">
-      <Helmet>
-        <title>Pricing Plans | Affordable Web Design Services</title>
-        <meta name="description" content="Transparent pricing for web design and development. Choose from Starter, Business, or Premium plans. No hidden fees." />
-      </Helmet>
+      <SEO
+        title="Affordable Web Design Packages | Pricing"
+        description="Transparent pricing for web design and development. Choose from our affordable packages for business websites, ecommerce, and custom solutions."
+        keywords="web design pricing, website cost, affordable web design, low cost website builder, ecommerce website price, web development packages, cheap website design india"
+      />
       <section className="section-padding text-center">
         <div className="container-custom">
           <motion.p {...fadeInUp} className="text-sm font-semibold text-primary tracking-widest uppercase mb-4">
